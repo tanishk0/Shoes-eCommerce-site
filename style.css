@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+}
+nav{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* nav links + logo  */
+.nav-links{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.nav-links li{
+    list-style: none;
+    font-weight: 500;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+.nav-links a{
+    color: hsl(219, 9%, 45%);
+    text-decoration: none;
+    
+}
+.nav-links a:hover{
+    color: black;
+    transition: 0.5s ease;
+}
+.nav-links li:hover{
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+    transition: 0.1s ease-in-out;
+}
+li a.men{
+    color: black;
+}
+.profile{
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart img{
+    height: 22px;
+}
+.cart{
+    cursor: pointer;
+}
+.cart-view{
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(56, 56, 56, 0.2);
+    height: 200px;
+    width: 300px;
+    right: 100px;
+    top: 70px;
+    display: none;
+}
+.cart-active{
+    display: flex;
+    position: absolute;
+}
+.dp{
+    cursor: pointer;
+}
+.dp img{
+    height: 40px;
+    outline: 1px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+hr{
+    background-color: hsl(223, 64%, 98%);
+}
+/* main section */
+.main{
+    height: 85vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.product{
+    width: 350px;
+}
+.product img{
+    height: 350px;
+    border-radius: 10px;
+}
+.tmbs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.tmbs img{
+    height: 70px;
+    cursor: pointer;
+}
+.pro-des{
+    width: 350px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pro-des h2{
+    font-size: 12px;
+    color: hsl(26, 100%, 55%);
+    margin-top: 20px;
+}
+.pro-des h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.pro-des p{
+    font-size: 11px;
+    color: hsl(219, 9%, 45%);
+    font-weight: 600;
+}
+.price{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.price h2{
+    color: black;
+    font-size: 20px;
+}
+.off{
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+.off h3{
+    font-size: 12px;
+    color: hsl(26, 100%, 55%);
+    
+}
+.dis p{
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+}
+.add-tc{
+    display: flex;
+}
+#counter{
+    width: 85px;
+    height: 35px;
+    background-color: hsl(223, 64%, 98%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+#counter button{
+    outline: none;
+    border: none;
+    background: none;
+    height: 10px;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#counter .unactive{
+    pointer-events: none;
+    opacity: 0.6;
+}
+.add-btn button{
+    border: none;
+    outline: none;
+    width: 160px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: hsl(26, 100%, 55%);
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}
+.add-btn button img{
+    margin-right: 5px;
+    height: 15px;
+}
